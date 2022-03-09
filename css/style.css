@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+/* 画面のスタイルシート */
+body{
+    font-family: "Noto Sans JP",sans-serif;
+    margin: 0;
+    min-width:1080px;
+}
+
+a{
+    text-decoration: none;
+    color:#4a4a4a;
+}
+
+img{
+    height: 20px;
+}
+
+h3{
+    font-size: 110px;
+    font-weight: normal;
+    color:#4a4a4a;
+}
+
+h2{
+    font-size:30px;
+    font-weight: normal;
+    color:#e04444
+}
+
+/* topmenu */
+.topmenu{
+    display: inline-flex;
+    width:100%;
+    font-size: 12px;
+    height: 65px;
+    position: relative;
+    border-bottom : solid 2px #e04444;
+}
+
+.topmenu a{
+    margin-left: 30px;
+    margin-right:60px;
+}
+.topmenu .iconabout img{
+    margin-top: 5px;
+    height:20px;
+}
+
+.topmenu p{
+    position: absolute;
+    margin-left:27px;
+    bottom:8px;
+    border-bottom: 2px dotted #4a4a4a;
+}
+
+/* home */
+#home{
+    width:100%;
+    display: inline-flex;
+    
+    height:600px;
+    background-image:url("../img/fuyuko_phote.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:90% center;
+}
+
+.myname{
+    margin-left:100px;
+}
+
+/* about */
+#about{
+    width:100%;
+    height: 450px;
+    background-color: #e04444;
+    display: inline-block;
+    text-align: center;
+}
+
+#about .abouticon p{
+    width: 100%;
+    margin: 40px 0 15px;
+    font-size: 30px;
+    color:white;
+}
+
+#about .abouticon img{
+    width:100%;
+    margin: 0 0 30px;
+    height: 20px;
+}
+
+#about .skill{
+    margin:0px 15% 20px;
+}
+#about .skill p{
+    color:white;
+    font-size: 20px;
+}
+
+#about .pr{
+    text-align: left;
+    margin:0 20% 20px;
+}
+
+#about .pr p{
+    color:white;
+    font-size: 18px;
+}
+
+#about .mail{
+    margin-bottom: 20px;
+}
+#about .mail a{
+    color:white;
+    font-size:16px;
+}
+
+#about .skillicon{
+    display: inline-flex;
+    margin top:15px;
+    height: 100px;
+}
+
+#about .skillicon a{
+    width: 50px;
+}
+
+/* projects */
+#projects{
+    text-align: center;
+    width:100%;
+    height:800px;
+    display: inline-block;
+    margin: auto;
+    color:#4a4a4a
+}
+
+#projects .projectsicon p{
+    color:#e04444;
+    width: 100%;
+    margin: 40px 0 15px;
+    font-size:30px;
+}
+
+#projects .projectsicon img{
+    width:100%;
+    margin: 0 0 30px;
+    height: 20px;
+}
+
+#projects .projectlist{
+    width:100%;
+    height:800px;
+    display: inline-flex;
+}
+
+#projects .projectlist .project{
+    width:400px;
+    height:380px;
+    margin: 0 auto;
+}
+
+#projects .projectlist .project img{
+    width:400px;
+    height :380px;
+    padding: 25px;
+    border: solid 2px #e04444;
+}
+
+#projects .projectlist .project .skillitem{
+    color :dimgrey;
+    font-size: 25px;
+    font-weight:normal;
+    position: relative;
+    text-decoration: none;
+    margin: 20px 0 30px;
+    letter-spacing: 1px;
+}
+
+#projects .projectlist .project .skillitem:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    width: 30%;
+    height: 3px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: darkgray;
+    border-radius: 0px;
+}
+
+#projects .projectlist .project .skillpr{
+    font-size: 14px;
+}
+
+#projects .projectlist .project .testacount{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#projects .projectlist .project .mail{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+#projects .projectlist .project .pass{
+    margin-top: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#projects .projectlist .project .link{
+    width:100%;
+    display: inline-flex;
+}
+
+#projects .projectlist .project .link .website{
+    width:50%;
+    margin: 10px auto;
+}
+
+#projects .projectlist .project .link .website a{
+    background-color: #e04444;
+    color:white;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+#projects .projectlist .project .link .github{
+    width:50%;
+    margin: 10px auto;
+}
+
+#projects .projectlist .project .link .github a{
+    background-color: #e04444;
+    color:white;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+/* contact */
+#contact{
+    width:100%;
+    height: 460px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+#contact .contactme{
+    display: inline-block;
+    width:100%;
+    text-align: center;
+    margin: 60px auto 20px;
+}
+
+#contact .contactme .contacttext{
+    display: inline-flex;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+#contact .contactme .contactimg{
+    width :100%;
+    margin: 20px auto 10px;
+}
+
+#contact .contactme .contacttext .textglay{
+    color:#4a4a4a;
+}
+
+#contact .contactme .contacttext .textred{
+    color:#e04444;
+}
+
+#contact .contactlink{
+    display:inline-flex;
+    width: 100%;
+}
+
+#contact .contactlink .phone{
+    width: 360px;
+    height: 200px;
+    margin: auto;
+    background-color: #e9efef;
+    border-style:solid;
+    border-width: 3px;
+    border-color: #e9efef #e9efef #e04444 #e9efef;
+}
+
+#contact .contactlink .phone img{
+    height: 50px;
+    margin-top: 30px;
+}
+
+#contact .contactlink .email{
+    width: 360px;
+    height: 200px;
+    margin: auto;
+    background-color: #e9efef;
+    border-style:solid;
+    border-width: 3px;
+    border-color: #e9efef #e9efef #e04444 #e9efef;
+}
+#contact .contactlink .email img{
+    height: 50px;
+    margin: 20px auto 5px;
+}
+
+#contact .contactdecoration{
+    font-size: 15px;
+    font-weight:normal;
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin: 0 0 30px;
+}
+
+#contact .contactdecoration:before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    display: inline-block;
+    width: 30%;
+    height: 3px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #4a4a4a;
+    border-radius: 0px;
+}
+
+.emailred{
+    font-size: 15px;
+    font-weight:normal;
+    width:fit-content;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin: 0 auto 30px;
+    padding: 0.2rem;
+    border-bottom: 3px dotted #e04444;
+    color: #e04444;
+}
+
+footer{
+    background-color: #e9efef;
+    font-size: 12px;
+    text-align: center;
+    color:#4a4a4a;
+    height: 80px;
+    padding-top: 36px;
+}

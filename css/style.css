@@ -42,10 +42,21 @@ h2{
     margin-left: 30px;
     margin-right:60px;
 }
+
+.topmenu .iconhome img{
+    height: 35px;
+}
+
 .topmenu .iconabout img{
     margin-top: 5px;
     height:20px;
 }
+
+.topmenu .iconprojects img{
+    height: 30px;
+    margin-top: 5px;
+}
+
 
 .topmenu p{
     position: absolute;
@@ -100,6 +111,10 @@ h2{
     font-size: 20px;
 }
 
+.skillicon img{
+    height: 40px;
+}
+
 #about .pr{
     text-align: left;
     margin:0 20% 20px;
@@ -126,6 +141,7 @@ h2{
 
 #about .skillicon a{
     width: 50px;
+    margin: 0 10px 0;
 }
 
 /* projects */
@@ -159,13 +175,13 @@ h2{
 
 #projects .projectlist .project{
     width:400px;
-    height:380px;
+    height: 700px;
     margin: 0 auto;
 }
 
 #projects .projectlist .project img{
     width:400px;
-    height :380px;
+    height: 360px;
     padding: 25px;
     border: solid 2px #e04444;
 }
@@ -355,4 +371,183 @@ footer{
     color:#4a4a4a;
     height: 80px;
     padding-top: 36px;
+}
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width: 767px) {
+    body{
+        min-width: 100%;
+    }
+    
+    h3{
+        font-size: 80px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    /* topmenu */
+    .topmenu{
+        display: inline-flex;
+        width:100%;
+        font-size: 12px;
+        height: 65px;
+        text-align: center;
+    }
+
+    .topmenu a{
+        margin-bottom:5px;
+        margin-left: 0px;
+        margin-right:0px;
+    }
+
+    .topmenu p{
+        margin-left: 0;
+    }
+
+    .topmenu img{
+        margin-top:10px;
+        height:25px;
+    }
+
+    .topmenu .iconhome{
+        width:15%;
+        text-align: center;
+    }
+
+    .iconhome p{
+        padding-left:10px;
+    }
+    .topmenu .iconabout{
+        text-align: right;
+        width:70%;
+        padding-right: 30px;
+    
+    }
+
+    .topmenu .iconabout p{
+        width: 70%;
+        text-align: right;
+        padding-right: 22px;
+    }
+
+    .topmenu .iconprojects{
+        width:15%;
+        text-align: center;
+    }
+
+    .topmenu .iconprojects p{
+        width:15%;
+        padding-right:20px;
+        text-align: right;
+    }
+
+    
+    .topmenu .iconabout img{
+        margin-top: 15px;
+        height:15px;
+    }
+
+    .topmenu p{
+        border-bottom: 0px dotted #4a4a4a;
+    }
+
+
+    #home{
+        height: 700px;
+        background-position:bottom;
+    }
+
+    .myname{
+        margin: 0 auto 0;
+        text-align: center;
+    }
+
+    #about{
+        height: 350px;
+    }
+    #about .abouticon p{
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    #about .abouticon img{
+        height:15px;
+        margin-bottom: 15px;
+    }
+
+    #about .skill {
+        width:90%;
+        margin: 0 auto 20px;
+    }
+    #about .skill p{
+        font-size: 13px;
+    }
+
+    #about .pr {
+        width:80%;
+        margin: 0 auto 20px;
+    }
+    #about .pr p{
+        font-size: 10px;
+    }
+
+    #projects .projectlist{
+        display:block;
+    }
+
+    #projects .projectsicon p{
+        font-size:20px;
+    }
+
+    #projects .projectsicon img{
+        height:15px;
+    }
+
+
+    #projects .projectlist .project {
+        width:100%;
+    }
+
+    #projects .projectlist .project .skillpr p{
+        font-size:12px;
+    }
+
+    #projects .projectlist .project img{
+        width:100%;
+    }
+
+    #contact{
+        height: 650px;
+    }
+    
+    #contact .contactme .contacttext{
+        font-size:20px;
+    }
+
+    #contact .contactme .contactimg img{
+        height: 15px;
+    }
+
+    #contact .contactlink{
+        display: grid;
+    }
+    
+    #contact .contactlink .phone{
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+
+    #contact .contactlink .email{
+        width: 80%;
+        height: 200px;
+        margin: 0 auto 30px;
+    }
+
+    
+    footer{
+        font-size: 10px;
+        height: 50px;
+        padding-top: 20px;
+    }
 }
